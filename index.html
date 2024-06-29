@@ -1,8 +1,333 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
 
-<h1>Golf Greens Apartments Owner Association</h1>
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: burlywood; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:burlywood;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+
+  @media (max-width: 600px) {
+    /* Styles for small screens */
+    .topdiv {
+    font-size: small;
+  }
+}
+@media (min-width: 601px) {
+    /* Styles for larger screens */
+    .topdiv {
+    font-size: larger;
+  }
+}
+.inner {
+    width: 60%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: burlywood;
+}
+.outer {
+    width: 100%;
+}
+</style>
+</head>
+<body style="background-color: #555;">
+<div class="topdiv" style="background-color: burlywood; text-align: center;height: 100px;line-height: 100px; "> GOLF GREEN APRTMENT OWNER ASSOCIATION</div>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#aboutus">About Us</a>
+  <a href="#notice">Notice</a>
+  <a href="#member">CURRENT AOA MEMBERS</a>
+  <a href="#rules">RESIDENTS COMMON RULS</a>
+  <a href="#pet">Guidelines for Pet Owners</a>
+  <a href="#contactus">Contact Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div id="home" class="outer">
+    <div class="inner">
+        <p>Nestled in the heart of Crossings Republik township in Ghaziabad, KSN Golf Greens offers unparalleled luxury and comfort. This exclusive residential project, which started giving possession in 2012, features exquisitely designed 3-bedroom, 3-bathroom apartments spanning a lavish 1,725 square feet.</p>
+        <p>Strategically located along NH-24 (Delhi-Meerut Expressway), Crossings Republik boasts excellent connectivity to major hubs such as Ghaziabad, Greater Noida, Noida, and Delhi. The township is witnessing rapid development, with a wide range of social and retail infrastructure, including shopping complexes, schools, hospitals, and entertainment centers.</p>
+        <p>KSN Golf Greens is just one of the many prestigious residential projects in Crossings Republik, which also includes renowned names like Mahagun Mascot, Panchsheel Wellington, Supertech Livingston, and Assotech The Nest, among others.</p>
+        <p>Whether you're seeking a luxurious lifestyle, a serene environment, or excellent connectivity, KSN Golf Greens in Crossings Republik offers it all. Experience the ultimate in modern living and become a part of this exclusive community today.</p>
+      </div>
+</div>
+<img src="gg.jpg" style="width:70%;margin-left: 15%;">
+<div id="aboutus" class="outer">
+    <div class="inner">
+        <h4 style="text-align: center;">About Us</h4>
+        <h4 style="text-align: center;">The Golf Greens AOA: Ensuring a Harmonious Community Living Experience</h4>
+        <p>The Golf Greens AOA (Association of Apartment Owners) was registered on July 22, 2020, under the Societies Registration Act, 1860, with the Registrar of Firms, Societies, and Chit. This esteemed body plays a crucial role in maintaining the well-being and cohesion of the KSN Golf Greens residential community.</p>
+        <p>The AOA comprises 10 dedicated members, including four office bearers, two executive members, and four general members. Together, they work tirelessly to ensure that the community's interests are protected and that all residents can enjoy a comfortable and harmonious living experience.</p>
+        
+        <h4 style="text-align: center;">Functions and Duties</h4>
+        <p>1. Community Management: The AOA oversees the day-to-day operations and management of the residential complex, ensuring smooth functioning and addressing any concerns or issues that may arise.</p>
+        <p>2. Maintenance and Upkeep: One of the primary responsibilities of the AOA is to maintain the common areas, amenities, and infrastructure within the complex. This includes overseeing the maintenance of gardens, parks, clubhouses, and other shared facilities</p>
+        <p>3. Financial Management: The AOA is entrusted with the task of managing the financial affairs of the community, including collecting maintenance fees, budgeting, and ensuring judicious utilization of funds for the betterment of the complex.</p>
+        <p>4. Security and Safety: Ensuring the safety and security of residents is a top priority for the AOA. They work closely with security personnel and implement measures to maintain a secure living environment.</p>
+        <p>5. Compliance and Regulations: The AOA ensures that all activities and operations within the complex adhere to relevant laws, regulations, and bylaws set forth by local authorities and governing bodies.</p>
+        <p>6. Community Engagement: The AOA facilitates community events, celebrations, and initiatives that foster a sense of togetherness and promote social interaction among residents.</p>
+        <p>7. Dispute Resolution: In the event of any disputes or conflicts within the community, the AOA acts as a mediator, working towards amicable resolutions that benefit all parties involved.</p>
+        <p>The Golf Greens AOA is committed to upholding the highest standards of governance and transparency, ensuring that the community's interests are always at the forefront of their decision-making processes. With their dedicated efforts, the AOA aims to create a harmonious and thriving living environments for all residents of KSN Golf Greens.</p>
+    </div>
+</div>
+<div id="notice" class="outer">
+    <div class="inner">
+        <h4 style="text-align: center;font-weight: bold;">NOTICE</h4>
+        <h4 style="text-align: center;">Important Update for Society Residents</h4>
+        <p>Dear Residents -</p>
+        <p>We want to inform you about some major works currently underway in our society to enhance our living environment.</p>
+        <p>However, we urge everyone to be cautious, especially with our little ones, and ensure their safety during these renovations.</p>
+        <p>Here are the ongoing projects:</p>
+        <p>1. *Waterproofing of Garden Area*: We are currently in the process of waterproofing the garden area due to water seepage issues that have caused severe damage to pillars and beams in the basement. To prevent further damage, waterproofing measures are being implemented, and the affected pillars and beams in the basement are also being fixed. Resident’s safety is our priority, and we're taking proactive steps to address this issue.</p>
+        <p>2. *Whitewashing Corridors and Staircases*: To give our common areas a fresh and vibrant look, we are whitewashing the corridors and staircases. This will enhance the aesthetics of our surroundings and create a more pleasant environment for all.</p>
+        <p>3. *Re-structuring of Front and Back Side Shades*: We are re-structuring the shades on the front and back sides of the buildings. This will not only improve the appearance of our society but also provide better protection from the elements.</p>
+        <p>4. *Tiling Work on Building's Outer Wall*: Tiling work is being done on the outer walls of the buildings up to a height of 5 feet for added protection. This will help safeguard our buildings against wear and tear while enhancing their overall appearance.</p>
+        <p>While these works are ongoing, we request everyone to keep a close eye on their children. Please ensure they stay away from the tools, equipment, raw materials, working areas, and gravels to avoid any accidents.</p>
+        <p>Additionally, we advise against running in the driveway to prevent any mishaps.</p>
+        <p>Your cooperation in ensuring the safety of everyone in our community is highly appreciated. Let's work together to make our society a safe and beautiful place to live.</p>
+        <p>Thank you for your attention and cooperation!</p>
+    </div>
+</div>
+<div id="member" class="outer">
+    <div class="inner" style="overflow-x:auto;">
+        <h4 style="text-align: center;">CURRENT AOA MEMBERS (2023-2024)</h4>
+        <table id="customers">
+            <tr>
+                <th>S.NO</td>
+                <th>NAME</td>
+                <th>DESIGNATION</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>TUSHAR KANT JHA</td>
+                <td>PRESIDENT</td>     
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>SUMIT KHANNA</td>
+                <td>VICE PRESIDENT</td>     
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>AMIT KUMAR</td>
+                <td>SECRETARY</td>     
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>SANDEEP KUMAR PAL</td>
+                <td>JOINT SECRETARY</td>     
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>VIJAY KUMAR GOEL</td>
+                <td>TREASURER</td>     
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>RAM KRISHNA</td>
+                <td>EXECUTIVE MEMBER</td>     
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>SANDEEP KUMAR SINHA</td>
+                <td>EXECUTIVE MEMBER</td>     
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>SUNDAR SINGH</td>
+                <td>MEMBER</td>     
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>SANJAY HARCHANDANI</td>
+                <td>MEMBER</td>     
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>SATISH AGARWAL</td>
+                <td>MEMBER</td>     
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>UPENDRA KHATRI</td>
+                <td>ADVISOR</td>     
+            </tr>
+        </table>
+    </div>
+</div>
+<div id="rules" class="outer">
+    <div class="inner">
+        <h4 style="text-align: center;">RESIDENTS COMMON RULS</h4>
+        <p>1. All flat owners are required to regularly pay maintenance fees and electricity consumption charges each month so that all facilities continue to operate smoothly.</p>
+        <p>2. Each flat owner is responsible for the internal maintenance of their flat, including fittings and fixtures.</p>
+        <p>3. It is the legal responsibility of each flat owner to conduct police verification of the tenants residing in their flat before renting it out. They must submit verification certificates, rental agreements, copies of tenants' IDs and address proofs to the office. Otherwise, they will be held accountable for any adverse situations.</p>
+        <p>4. The use of flats is strictly for residential purposes only; any other use is prohibited. Except for maintenance staff, no other personnel will be allowed entry apart from those related to daily maintenance tasks.</p>
+        <p>5. No flat owner shall make structural changes to their flat or share utilities such as gas, water, and electricity without prior approval from competent authorities. Owners will be responsible for any violations.</p>
+        <p>6. Prior to selling, buying, renting, or vacating any flat, it is mandatory to obtain a no objection certificate (NOC) from the Golf Greens Association of Apartment Owners (AOA).</p>
+        <p>7. All flat owners and residents must park their vehicles only in designated and authorized parking areas. Unauthorized parking is prohibited.</p>
+        <p>8. Heavy items must be transported using only the main service lift.</p>
+        <p>9. No flat owner is allowed to display any posters or banners in any part of the residential area.</p>
+        <p>10. Do not tamper with or damage any equipment installed in the premises, such as CCTV cameras, fire safety systems, etc. Action will be taken against offenders.</p>
+        <p>11. All flat owners, residents, and employees must behave courteously towards each other and refrain from spreading false propaganda or rumours, as it tarnishes the reputation of the society.</p>
+        <p>12. If you have any complaints against any employee or official, please register them in the complaint register kept at the gate. The committee will make efforts for resolution.</p>
+    </div>
+</div>
+<div id="pet" class="outer">
+    <div class="inner">
+        <h4 style="text-align: center;">Guidelines for Pet Owners</h4>
+        <p>Pet owners should be vigilant that the pet is not being teased or troubled by any child or any other person.</p>
+        <p>As per the rules for dogs in apartments, the pet owner should ensure that they abide by all the Municipal Corporation By-Laws or Regulations (Dog License and renewal of License). </p>
+        <p>Use of leashes/chains/muzzles: It is important for dog owners to keep their pets on a leash and under control whenever they are walking in the common area of the building (corridors, lifts, and parks), so that others feel safe.</p>
+        <p>For preventing the pet from provoked, the pet owner should train about the standard and familiar people in and out of society.</p>
+        <p>Ensure that the pets do not fight with other pets. </p>
+        <p>Make sure your pet is toilet trained and avoid excreting within the premises. It is strongly advisable for pet owners to clean up after their dogs inside the society premises (Lifts, Corridor, Driveway, Basement, etc.).</p>
+        <p>AOA will impose a fine of 5000 on pet owners who refuse or fail to clean up after their pets.</p>
+        <p>Pet owners should take care that the barking is not causing a nuisance to other members especially neighbours.</p>
+        <p>Pets should be kept clean, healthy and vaccinated.</p>
+        <p>Owners of pets should be aware that AOA can impose a penalty and file a police complaint against a NEGLIGENT PET OWNERs.</p>
+        <p>The pet owner will be fully responsible for any dog bite incident and shoulder all associated costs.</p>
+        <p>To prevent crowds and scare others, pet owners are advised to use the BIG SERVICE LIFT only with their pets.</p>
+    </div>
+</div>
+<div id="contactus" class="outer">
+    <div class="inner">
+        <h4 style="text-align: center;">Contact Us</h4>
+        <h4 style="text-align: center;">Email: aoagolfgreens@gmail.com</h4>
+    </div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+let mybutton = document.getElementById("myBtn");
+
+// Show/hide the button based on scroll position
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+};
+
+// Scroll to the top when the button is clicked
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+</script>
 
 </body>
 </html>
